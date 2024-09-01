@@ -1,3 +1,4 @@
+import Splide from "@splidejs/splide";
 const scrollableAreaEl = document.getElementById("scrollable_items");
 function scrollElementX(scrollPos) {
   const scrollableItems = scrollableAreaEl.children;
@@ -139,6 +140,17 @@ splider.mount();
 
 let splides = new Splide(".splides", {
   perPage: 2,
+  breakpoints: {
+    1280: {
+      padding: 0,
+    },
+    768: {
+      perPage: 1,
+    },
+    640: {
+      destroy: false,
+    },
+  },
   type: "loop",
   padding: "10rem",
   gap: "2rem",
