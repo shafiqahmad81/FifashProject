@@ -64,3 +64,11 @@
     background: #34251f;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .splides {
+    .splide__pagination {
+      bottom: -2.5em;
+    }
+  }
+}
